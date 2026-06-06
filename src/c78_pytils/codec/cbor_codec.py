@@ -12,7 +12,7 @@ def encode(obj: PkgableClass) -> CodecType:
     return cbor_encoded_obj
 
 PkgableClassType = TypeVar("PkgableClassType", bound=PkgableClass)
-def decode(cls: PkgableClassType, encoded_message: CodecType) -> PkgableClassType:
+def decode(cls: type[PkgableClassType], encoded_message: CodecType) -> PkgableClassType:
     raw_message: Any = cbor2.loads(encoded_message)
     if not isinstance(raw_message, PakageType):
         raise TypeError(f"Raw decoded Message was not of PakageType({PakageType.__name__})!")
