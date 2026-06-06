@@ -4,8 +4,9 @@ from abc import ABC
 from enum import Enum
 from typing import Any, Type, get_type_hints, get_origin, cast
 
-from smart_struct import *
-from pkgable_class import *
+from c78_pytils.types.smart_class import *
+from c78_pytils.types.smart_struct import *
+from c78_pytils.types.pkgable_class import *
 
 def __pack__(data: Any) -> Any:
     if isinstance(data, PkgableTaggedStruct):

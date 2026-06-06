@@ -2,7 +2,7 @@
 import cbor2
 from typing import Any, TypeVar, cast
 
-from types.pkgable_class import PakageType, Package, PkgableClass
+from c78_pytils.types.pkgable_class import PakageType, Package, PkgableClass
 
 CodecType=bytes
 

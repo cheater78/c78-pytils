@@ -3,7 +3,7 @@ from abc import ABC
 from enum import Enum
 from typing import Any, ClassVar, Generic, Type, TypeVar, get_origin, get_args, cast, Tuple, Dict
 
-from smart_class import SmartClass, smartdataclass
+from c78_pytils.types.smart_class import *
 
 @smartdataclass
 class SmartStruct(SmartClass, ABC):
